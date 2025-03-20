@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Saúde e Bem-Estar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="favicon/estetoscopio.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="services.html">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="organize">
+        <div class="calculator">
+            <h2>Calculadora de IMC</h2>
+            <input type="number" id="weight" placeholder="Peso em kg" required>
+            <input type="number" id="height" placeholder="Altura em metros" required>
+            <button onclick="calculateIMC()">Calcular IMC</button>
+            <div id="result" class="result"></div>
+        </div>
+    
+        <div class="calculator">
+            <h2>Calculadora de Taxa Metabólica Basal</h2>
+            <select id="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+            <input type="number" id="peso" placeholder="Peso (kg)">
+            <input type="number" id="altura" placeholder="Altura (cm)">
+            <input type="number" id="idade" placeholder="Idade">
+            <button onclick="calcularTMB()">Calcular</button>
+            <p id="resultado" class="result"></p>
+        </div>
+    
+        <div class="calculator">
+            <h2>Calculadora de água diária</h2>
+            <input type="number" id="peso-agua" placeholder="Peso (kg)">
+            <button onclick="calcularAgua()">Calcular</button>
+            <p id="valor" class="result"></p>
+        </div>
+    </div>
+    <main>
+        <section class="services">
+            <h1> Outros Serviços Oferecidos</h1>
+            <ul>
+                <li><h2>Consultoria Nutricional</h2><p>Consulta com nutricionistas para melhorar sua alimentação.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/yrMnrkG9bao?si=jhbPQXmPmSulrsfJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                <li><h2>Aulas de Yoga</h2><p>Aulas de yoga para promover equilíbrio físico e mental.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TPj5V0qXV8Y?si=0d160uzrCUcot0L0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                <li><h2>Atendimento Psicológico</h2><p>Dicas com psicólogos para cuidar da sua saúde mental.</p><iframe width="678" height="391" src="https://www.youtube.com/embed/CrwRwgNJIMU" title="4 DICAS PARA MELHORAR SUA SAÚDE MENTAL SEM PRECISAR IR AO PSICÓLOGO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a id="pgindex" href="index.html">home</a>
+        <button id="back-to-top">Voltar ao Topo</button>
+        <p>&copy; 2024 Saúde e Bem-Estar | Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
